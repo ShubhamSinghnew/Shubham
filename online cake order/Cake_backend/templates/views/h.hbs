@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getDevice() {
+            var Customer_Phoneno = document.getElementById("Customer_Phoneno").value;
+            window.location.href = '/'+Customer_Phoneno;
+            return false;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return getDevice();" action="/h" method="POST">
+        <label for="deviceId">Device ID:</label>
+        <input type="text" id="Customer_Phoneno" name="Customer_Phoneno">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My HTML Form</title>
+</head>
+
+<body>
+  <form onsubmit="handleSubmit">
+    <input type="file" onchange="handleChange" id="fileInput" />
+    <br />
+    <button type="submit">Submit</button>
+    <% hi %>
+  </form>
+  <script>
+    const storageClient = <%= JSON.stringify(storageClient) %>;
+
+    async function storeFiles(file) {
+      const files = []
+      files.push(file)
+      alert(files)
+      const client = storageClient()
+      const cid = await client.put(files)
+      console.log('stored files with cid:', cid)
+      return cid
+    }
+    let image = ""
+    const handleChange = (e) => {
+      image = e.target.files[0];
+    };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (!image) {
+        return alert("Please select a file to upload");
+      }
+
+      await storeFiles(image)
+
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* *{
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+nav {
+    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 26px;
+}
+
+nav h1{
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.container .text {
+    margin-top: 40px;
+}
+.text h1 {
+    font-size: 110px;
+}
+
+.text p {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.text button {
+    height: 40px;
+    width:160px;
+    background-color: red;
+    font-size: 26px;
+    color: white;
+    border: none;
+    margin-top: 50px;
+}
+
+.text button:hover{
+    cursor: pointer;
+    background-color: brown;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+ul li a {
+    margin-inline: 30px;
+    font-size: 24px;
+    border-bottom: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: azure;
+    
+}
+
+ul li a:hover{
+    border: 2px solid white;
+}
+
+img {
+    width: 45%;
+    margin-left: 110px;
+} */ 
+
+/* .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+} */
+.navbar-nav .nav-link {
+    color: white;
+}
+.carosol {
+    height: 700px;
+}
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    color: #FFF;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.joinBtn {
+    width: 10em;
+    height: 5ex;
+    background-color: white;
+    
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+
+.joinBtn:hover {
+    background-color: orange;
+}
+.card-body{
+    text-align: center;
+}
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In and Registration Form Using Bootstrap</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+     <link href="css/custom.css" rel="stylesheet" /> 
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container" style="background-image: url(https://st3.depositphotos.com/8687452/15803/i/450/depositphotos_158035108-stock-photo-happy-birthday-cake.jpg);">
+    <!--<div class="container" style="background-image:url();"-->
+        <div class="row text-center ">
+            <div class="col-md-12">
+                <br /><br />
+                <h2 style="color: orange;font-family: 'Times New Roman', Times, serif;">User Log In</h2>
+
+                <h5>( Enter correct details to get access )</h5>
+                <br />
+            </div>
+        </div>
+        <div class="row ">
+
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong style="color:blue;"> Enter Details To Login </strong>
+                    </div>
+                    <div class="panel-body" style="background: rgba(240, 135, 50, 0.1);">
+                        <form role="form" action="/Userlogin" method="POST">
+                            <br />
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+                                <input type="text" class="form-control" name="email"
+                                    placeholder="Enter your User Email. . . "  autofocus="autofocus" required>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="psd"
+                                    placeholder="Enter your Password. . . . ." required>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" /> Remember me
+                                </label>
+                                <span class="pull-right">
+                                    <a href="#">Forget password ? </a>
+                                </span>
+                            </div>
+
+                           <!-- <a href="#" class="btn btn-primary " style="margin-left: 125px; background-color: orange;">Login Now</a>-->
+                            <input type="submit" class="btn btn-primary"  value="Login" >
+                            <hr />
+                            Not register ? <a href="register">click here </a>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
